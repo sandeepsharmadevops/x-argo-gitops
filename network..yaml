@@ -30,3 +30,20 @@ spec:
     tags:
     - key: Name
       value: xdemo-vpc-subnet1
+
+## declaration to create subnet2
+---
+apiVersion: ec2.aws.crossplane.io/v1beta1
+kind: Subnet
+metadata:
+  name: xdemo-vpc-subnet2
+spec:
+  forProvider:
+    region: ap-south-1
+    cidrBlock: 10.10.10.0/24
+    availabilityZoneId: aps1-az2
+    vpcIdRef:
+      name: xdemo-vpc
+    tags:
+    - key: Name
+      value: xdemo-vpc-subnet2
