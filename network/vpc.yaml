@@ -62,6 +62,6 @@ spec:
     - key: crossplane-kind
       value: subnet.ec2.aws.crossplane.io
     - key: crossplane-name
-      value: xdemo-vpc-subnet1
+      value: xdemo-vpc-subnet2
     - key: crossplane-providerconfig
       value: default
