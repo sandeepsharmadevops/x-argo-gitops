@@ -1,19 +1,19 @@
 ### declaration to create vpc
-#---
-#apiVersion: ec2.aws.crossplane.io/v1beta1
-#kind: VPC
-#metadata:
-#  name: xdemo-vpc
-#spec:
-#  forProvider:
-#    region: ap-south-1
-#    enableDnsHostNames: true
-#    enableDnsSupport: true
-#    cidrBlock: 10.10.0.0/16
-#    tags:
-#      - key: Name
-#        value: xdemo-vpc
-#
+---
+apiVersion: ec2.aws.crossplane.io/v1beta1
+kind: VPC
+metadata:
+  name: xdemo-vpc
+spec:
+  forProvider:
+    region: ap-south-1
+    enableDnsHostNames: true
+    enableDnsSupport: true
+    cidrBlock: 10.10.0.0/16
+    tags:
+      - key: Name
+        value: xdemo-vpc
+
 ### declaration to create subnet1
 #---
 #apiVersion: ec2.aws.crossplane.io/v1beta1
