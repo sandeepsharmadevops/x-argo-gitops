@@ -25,9 +25,8 @@ spec:
     region: ap-south-1
     availabilityZoneId: aps1-az1
     cidrBlock: 10.10.0.0/24
-    vpcIdSelector:
-      matchLabels:
-        Name: xdemo-vpc 
+    vpcIdRef:
+      name: xdemo-vpc
     tags:
     - key: Name
       value: xdemo-vpc-subnet1
